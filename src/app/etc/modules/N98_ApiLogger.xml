@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <N98_ApiLogger>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends></depends>
+        </N98_ApiLogger>
+    </modules>
+</config>
