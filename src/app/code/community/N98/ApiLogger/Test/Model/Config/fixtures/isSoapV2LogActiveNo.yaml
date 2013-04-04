@@ -1,0 +1,2 @@
+config:
+  stores/admin/api/n98_apilogger/soap_v2_active: 0

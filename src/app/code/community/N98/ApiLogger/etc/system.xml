@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <api>
+            <groups>
+                <n98_apilogger module="n98_apilogger">
+                    <label>Logging</label>
+                    <sort_order>100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <soap_active translate="label comment">
+                            <label>Log SOAP Requests</label>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>Log request to SOAP interface</comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>1</sort_order>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </soap_active>
+                        <soap_v2_active translate="label comment">
+                            <label>Log SOAP V2 Requests</label>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>Log request to SOAP V2 interface</comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>2</sort_order>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </soap_v2_active>
+                        <wsdl_request_log_active translate="label comment">
+                            <label>Log WSDL Requests</label>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>Logs all calls to WSDL</comment>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>3</sort_order>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </wsdl_request_log_active>
+                    </fields>
+                </n98_apilogger>
+            </groups>
+        </api>
+    </sections>
+</config>

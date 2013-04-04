@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <api>
+                                <children>
+                                    <n98_apilogger translate="title" module="n98_apilogger">
+                                        <title>Logging</title>
+                                        <sort_order>100</sort_order>
+                                    </n98_apilogger>
+                                </children>
+                            </api>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
