@@ -10,6 +10,7 @@ class N98_ApiLogger_Test_Config_Main extends EcomDev_PHPUnit_Test_Case_Config
     public function testModels()
     {
         $this->assertModelAlias('n98_apilogger/observer', 'N98_ApiLogger_Model_Observer');
+        $this->assertModelAlias('n98_apilogger/config', 'N98_ApiLogger_Model_Config');
     }
 
     public function testResource()

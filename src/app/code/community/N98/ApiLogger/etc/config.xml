@@ -72,10 +72,19 @@
             </controller_action_postdispatch_api_v2_soap_index>
         </events>
     </frontend>
+    <default>
+        <api>
+            <n98_apilogger>
+                <soap_active>0</soap_active>
+                <soap_v2_active>0</soap_v2_active>
+                <wsdl_request_log_active>0</wsdl_request_log_active>
+            </n98_apilogger>
+        </api>
+    </default>
     <phpunit>
         <suite>
             <modules>
-                <N98_ApiLogger />
+                <N98_ApiLogger/>
             </modules>
         </suite>
     </phpunit>

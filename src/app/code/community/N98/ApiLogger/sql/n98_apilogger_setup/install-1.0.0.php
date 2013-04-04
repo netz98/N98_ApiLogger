@@ -23,6 +23,7 @@ $table = $this->getConnection()
     ->addColumn('body', Varien_Db_Ddl_Table::TYPE_TEXT, null)
     ->addColumn('request_id', Varien_Db_Ddl_Table::TYPE_VARCHAR, 20, array('nullable' => false))
     ->addColumn('direction', Varien_Db_Ddl_Table::TYPE_VARCHAR, 10, array('nullable' => false))
+    ->addColumn('api_adapter', Varien_Db_Ddl_Table::TYPE_VARCHAR, 20, array('nullable' => false))
     ->addColumn('http_method', Varien_Db_Ddl_Table::TYPE_VARCHAR, 20, array('nullable' => false))
     ->addColumn('http_status_code', Varien_Db_Ddl_Table::TYPE_INTEGER, null, array('nullable' => false))
     ->setComment('log table for API requests');
