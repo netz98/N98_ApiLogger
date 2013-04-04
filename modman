@@ -1,3 +1,9 @@
-src/app/code/community/N98/ApiLogger     app/code/community/N98/ApiLogger
-src/app/etc/modules/*    app/etc/modules/
+src/app/code/community/N98/ApiLogger        app/code/community/N98/ApiLogger
+src/app/design/adminhtml/default/default/layout/n98/*      app/design/adminhtml/default/default/layout/n98/
+src/app/design/adminhtml/default/default/template/n98/apilogger      app/design/adminhtml/default/default/template/n98/apilogger
+src/app/etc/modules/*       app/etc/modules/
+src/app/locale/de_DE/*      app/locale/de_DE/
+src/app/locale/en_US/*      app/locale/en_US/
+src/skin/adminhtml/default/default/n98/apilogger      skin/adminhtml/default/default/n98/apilogger
+src/js/n98/apilogger      js/n98/apilogger
 src/shell/*     shell/

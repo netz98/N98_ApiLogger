@@ -2,6 +2,11 @@
 
 class N98_ApiLogger_Test_Config_Main extends EcomDev_PHPUnit_Test_Case_Config
 {
+    public function testBlocks()
+    {
+        $this->assertBlockAlias('n98_apilogger/adminhtml_log', 'N98_ApiLogger_Block_Adminhtml_Log');
+    }
+
     public function testHelpers()
     {
         $this->assertHelperAlias('n98_apilogger', 'N98_ApiLogger_Helper_Data');

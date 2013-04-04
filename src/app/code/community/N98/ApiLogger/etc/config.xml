@@ -6,6 +6,11 @@
         </N98_ApiLogger>
     </modules>
     <global>
+        <blocks>
+            <n98_apilogger>
+                <class>N98_ApiLogger_Block</class>
+            </n98_apilogger>
+        </blocks>
         <helpers>
             <n98_apilogger>
                 <class>N98_ApiLogger_Helper</class>
@@ -71,7 +76,45 @@
                 </observers>
             </controller_action_postdispatch_api_v2_soap_index>
         </events>
+        <translate>
+            <modules>
+                <N98_ApiLogger>
+                    <files>
+                        <default>N98_ApiLogger.csv</default>
+                    </files>
+                </N98_ApiLogger>
+            </modules>
+        </translate>
     </frontend>
+    <adminhtml>
+        <layout>
+            <updates>
+                <n98_apilogger>
+                    <file>n98/apilogger.xml</file>
+                </n98_apilogger>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <N98_ApiLogger>
+                    <files>
+                        <default>N98_ApiLogger.csv</default>
+                    </files>
+                </N98_ApiLogger>
+            </modules>
+        </translate>
+    </adminhtml>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <n98_apilogger before="Mage_Adminhtml">N98_ApiLogger_Adminhtml</n98_apilogger>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
     <default>
         <api>
             <n98_apilogger>

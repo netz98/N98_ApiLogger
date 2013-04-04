@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+
+    <adminhtml_apilogger_index>
+        <reference name="head">
+            <action method="addCss"><name>n98/apilogger/prettify.css</name></action>
+            <action method="addJs"><script>n98/apilogger/prettify.js</script></action>
+        </reference>
+        <reference name="content">
+            <block type="n98_apilogger/adminhtml_log" name="admin.n98_apilogger.log"/>
+            <block type="core/template" name="admin.n98_apilogger.prettify" template="n98/apilogger/prettify.phtml" />
+        </reference>
+    </adminhtml_apilogger_index>
+
+</layout>

@@ -1,5 +1,20 @@
 <?xml version="1.0"?>
 <config>
+    <menu>
+        <system>
+            <children>
+                <api>
+                    <children>
+                        <n98_apilogger translate="title" module="n98_apilogger">
+                            <title>API Log</title>
+                            <sort_order>100</sort_order>
+                            <action>adminhtml/apilogger/index</action>
+                        </n98_apilogger>
+                    </children>
+                </api>
+            </children>
+        </system>
+    </menu>
     <acl>
         <resources>
             <admin>
@@ -9,11 +24,23 @@
                             <api>
                                 <children>
                                     <n98_apilogger translate="title" module="n98_apilogger">
-                                        <title>Logging</title>
+                                        <title>API Logger</title>
                                         <sort_order>100</sort_order>
                                     </n98_apilogger>
                                 </children>
                             </api>
+                            <config>
+                                <children>
+                                    <api>
+                                        <children>
+                                            <n98_apilogger translate="title" module="n98_apilogger">
+                                                <title>API Logger Settings</title>
+                                                <sort_order>100</sort_order>
+                                            </n98_apilogger>
+                                        </children>
+                                    </api>
+                                </children>
+                            </config>
                         </children>
                     </system>
                 </children>
